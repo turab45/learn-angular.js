@@ -1,0 +1,26 @@
+<div class="container">
+    <form (ngSubmit)="submitForm()" class="text-center m-5 p-5">
+        <h1 class="text-center">Add New Todo</h1>
+        <div>
+
+            <mat-form-field class="field example-full-width" appearance="outline">
+                <mat-label>Enter a Todo</mat-label>
+                <input [(ngModel)]="title" name="title" matInput placeholder="Enter a todo">
+            </mat-form-field>
+        </div>
+        <div>
+
+            <mat-form-field class="field example-full-width" appearance="outline">
+                <mat-label>Todo Description</mat-label>
+                <textarea [(ngModel)]="desc" name="desc" matInput placeholder="Enter todos description"></textarea>
+            </mat-form-field>
+        </div>
+
+        <div class="text-center">
+            <button class="mx-3" type="submit" mat-raised-button color="primary">Add Todo</button>
+            <button type="reset" mat-raised-button color="warn">Reset</button>
+
+        </div>
+
+    </form>
+</div>
