@@ -1,0 +1,21 @@
+<div class="container mt-5">
+
+    <div class="card-todo-items-container" *ngIf="todos.length > 0; else elseBlock">
+
+        <div *ngFor="let todo of todos">
+            <mat-card class="m-5 card-todo-items">
+                <mat-card-title>{{todo.title}}</mat-card-title>
+                <mat-card-subtitle>{{todo.sno}} - {{todo.active}}</mat-card-subtitle>
+                <mat-card-content>{{todo.desc}}</mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="warn" (click)="deleteTodo(todo)">Delete</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+    <ng-template #elseBlock>
+        <div class="text-center">
+            <h1>No todos left.</h1>
+        </div>
+    </ng-template>
+</div>
