@@ -1,0 +1,33 @@
+.container{
+    width: 100%;
+}
+
+.card{
+    width: 40%;
+    margin: auto;
+    margin-top: 5rem;
+    align-items: center;
+    padding: 5px;
+}
+
+.form{
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.field{
+    width: 80%;
+}
+
+.text-center{
+    text-align: center;
+}
+.button-form{
+    text-align: center;
+    align-items: center;
+}
+.btn{
+    margin: 5px;
+}
