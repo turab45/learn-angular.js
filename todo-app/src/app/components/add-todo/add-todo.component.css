@@ -1,0 +1,11 @@
+.field{
+    width: 50%;
+    margin: auto;
+    
+}
+
+.container{
+    align-items: center;
+    margin: auto;
+    background-color: antiquewhite;
+}
