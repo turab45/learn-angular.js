@@ -1,0 +1,13 @@
+div{
+    width: 100%;
+    margin: auto;
+    background-color: antiquewhite;
+}
+.field{
+    width: 50%;
+    margin: 5px;
+}
+
+.btn{
+    margin: 5px;
+}
