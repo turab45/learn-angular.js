@@ -17,7 +17,7 @@ export class SimpleFormComponent implements OnInit {
   }
 
   changeName() {
-    this.name.setValue("Turab Bajeer");
-    
+    this.name.setValue('Hello, ' + this.name.value);
+
   }
 }

@@ -2,7 +2,7 @@
     <h1>{{name.value}}</h1>
     <mat-form-field appearance="outline">
         <mat-label>Name</mat-label>
-        <input type="text" class="field" [formControl]="name" matInput>
+        <input type="text" formControlName="name" class="field" matInput>
     </mat-form-field>
     <button class="btn" mat-raised-button (click)="changeName()" color="primary">Change Name</button>
 </div>

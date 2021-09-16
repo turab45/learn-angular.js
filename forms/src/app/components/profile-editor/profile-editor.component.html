@@ -1,0 +1,48 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div class="form-content">
+        <h2 class="text-center">Profile</h2>
+        <div class="text-center">
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input type="text" class="field" formControlName="firstName" matInput>
+            </mat-form-field>
+        </div>
+        <div class="text-center">
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input type="text" class="field" formControlName="lastName" matInput>
+            </mat-form-field>
+        </div>
+        <div formGroupName="address">
+            <h2 class="text-center">Address</h2>
+            <div class="text-center">
+                <mat-form-field appearance="outline">
+                    <mat-label>Street</mat-label>
+                    <input type="text" class="field" formControlName="street" matInput>
+                </mat-form-field>
+            </div>
+            <div class="text-center">
+                <mat-form-field appearance="outline">
+                    <mat-label>City</mat-label>
+                    <input type="text" class="field" formControlName="city" matInput>
+                </mat-form-field>
+            </div>
+            <div class="text-center">
+                <mat-form-field appearance="outline">
+                    <mat-label>State</mat-label>
+                    <input type="text" class="field" formControlName="state" matInput>
+                </mat-form-field>
+            </div>
+            <div class="text-center">
+                <mat-form-field appearance="outline">
+                    <mat-label>Zip Code</mat-label>
+                    <input type="text" class="field" formControlName="zipCode" matInput>
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="center">
+            <button class="btn" type="submit" [disabled]="!profileForm.valid" mat-raised-button
+                color="primary">Submit</button>
+        </div>
+    </div>
+</form>

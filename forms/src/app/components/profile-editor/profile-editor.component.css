@@ -1,0 +1,21 @@
+mat-form-field{
+    margin-left: 5px !important;
+    width: 50%;
+}
+
+button{
+    margin-left: 5px;
+}
+
+.center{
+    text-align: center;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+.form-content{
+    margin-top: 5rem;
+}

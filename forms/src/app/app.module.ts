@@ -8,11 +8,13 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { ProfileEditorComponent } from './components/profile-editor/profile-editor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SimpleFormComponent
+    SimpleFormComponent,
+    ProfileEditorComponent
   ],
   imports: [
     BrowserModule,
